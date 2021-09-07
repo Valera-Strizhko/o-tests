@@ -7,8 +7,7 @@ test('get meeting by id', async () => {
   expect(response.status).toBe(200);
 
   const meeting = response.data;
-
-  // TODO expect(meeting.title).toBe(???);
+  expect(meeting.title).toBe('London is a capital of Great Britain');
   // TODO cover.mdX2.url
   // TODO subject.title
 });
